@@ -1,9 +1,17 @@
-"Used fetch 1 time, pull 1 time" 
-"- Used stash 1 time"
-"- Used cherry -pick 1 time"
-"-Used rebase 1 time"
-"-- Used revert 1 time " 
-"- Used reset 3 times (soft, mixed, hard)"  
-"- Used reflog 1 time"  
-"- Used cherry-pick 1 time (for recovery)"
-"-Created 2+ tags"
+- 3f464ce: docs: Added complete Git Mastery Challenge journey (tejaswinikuchi, 71 seconds ago)
+- 1eae263: Documented about usage of reset 3 times, revert 1 time and created 2+ tags (tejaswinikuchi, 11 minutes ago)
+- fcb1018: docs: Update README (tejaswinikuchi, 25 minutes ago)
+- e93719b: docs: Documented stash usage and cherry-pick usage (tejaswinikuchi, 2 hours ago)
+- 521635e: feat: Add new feature (tejaswinikuchi, 2 hours ago)
+- 04bfd94: docs: Add FAQ section (tejaswinikuchi, 2 hours ago)
+- d1e750c: Documented fetch and pull usage in CHANGELOG (tejaswinikuchi, 2 hours ago)
+- 4b177d9: Resolved all merge conflicts between main and conflict-simulator (tejaswinikuchi, 4 hours ago)
+- 40c5807: merge: resolve all conflicts between main and conflict-simulator branches (tejaswinikuchi, 4 hours ago)
+- 96d8f03: Add configuration and project setup files (tejaswinikuchi, 9 hours ago)
+- dc10fac: Merge branch 'dev' (tejaswinikuchi, 23 hours ago)
+- 352b948: Add checkpoint1 screenshot (tejaswinikuchi, 3 days ago)
+- d3dd9b2: updating conflict-simulator (Hanu Gupta, 6 days ago)
+- 02011a5: updating dev (Hanu Gupta, 6 days ago)
+- 0312c6f: updating main (Hanu Gupta, 6 days ago)
+- fadfd24: Revise README for DevOps Simulator project (Hanu Gupta, 6 days ago)
+- ae630eb: Initial commit (Hanu Gupta, 6 days ago)
