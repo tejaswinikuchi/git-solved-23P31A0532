@@ -58,3 +58,4 @@ Now enhanced with **AI-powered automation and multi-cloud support**.
 export DEPLOY_ENV=production
 ./scripts/deploy.sh
 "## FAQ" 
+"update" 
