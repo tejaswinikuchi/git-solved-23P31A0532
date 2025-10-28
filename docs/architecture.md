@@ -1,40 +1,73 @@
-# System Architecture
+# System Architecture (Unified)
 
 ## Overview
-DevOps Simulator follows a microservices architecture designed for high availability and scalability. This document covers both production and development configurations.
+DevOps Simulator follows a **microservices architecture** designed for high availability, scalability, and flexibility.  
+It supports both **stable (production & development)** and **experimental (AI-enhanced, multi-cloud)** configurations.
 
-## Components
+---
+
+## 🧩 Core Components
 
 ### 1. Application Server
-- **Technology**: Node.js + Express
-- **Production Port**: 8080
-- **Development Port**: 3000
-- **Scaling**: Horizontal auto-scaling (production only)
-- **Development Features**: Hot reload, debug mode
+| Environment | Technology | Port(s) | Key Features |
+|--------------|-------------|----------|---------------|
+| **Production** | Node.js + Express | 8080 | Horizontal auto-scaling, SSL/TLS, zero-downtime rolling updates |
+| **Development** | Node.js + Express | 3000 | Hot reload, debug mode, instant feedback |
+| **Experimental** | Node.js + Express + TensorFlow.js | 9000 (main), 9001 (metrics), 9002 (AI API) | AI-powered predictive scaling, ML inference, Kafka event streaming |
+
+---
 
 ### 2. Database Layer
-- **Database**: PostgreSQL 14
-- **Production**: Master-slave replication with automated backups
-- **Development**: Single local instance with seed data
+| Environment | Type | Configuration | Notes |
+|--------------|------|----------------|-------|
+| **Production** | PostgreSQL 14 | Master-slave replication, automated backups | High reliability |
+| **Development** | Local PostgreSQL | Single instance with seed data | Simplified for local testing |
+| **Experimental** | Distributed PostgreSQL cluster (5 nodes) | Multi-master replication, continuous backup, geo-redundancy | AI-driven query optimization, Redis caching |
 
-### 3. Monitoring System
-- **Production**: Prometheus + Grafana with email alerts
-- **Development**: Console logging with verbose output
-- **Metrics**: CPU, Memory, Disk, Network
+---
 
-## Deployment Strategy
+### 3. Monitoring & Observability
+| Environment | Tools | Features |
+|--------------|--------|-----------|
+| **Production** | Prometheus + Grafana | Metrics visualization, email alerts |
+| **Development** | Console logging | Verbose output for debugging |
+| **Experimental** | Prometheus + Thanos + ELK Stack | AI log analysis, anomaly detection, predictive alerts |
 
-### Production
-- **Method**: Rolling updates
-- **Zero-downtime**: Yes
-- **Rollback**: Automated on failure
-- **Region**: us-east-1
+---
 
-### Development
-- **Method**: Docker Compose
-- **Features**: Hot reload, instant feedback
-- **Testing**: Automated tests before deployment
+### 4. AI/ML Pipeline (Experimental)
+- **Frameworks**: TensorFlow, PyTorch, Scikit-learn  
+- **Models**:
+  - Anomaly detection (LSTM)
+  - Load prediction (XGBoost)
+  - Auto-scaling optimizer (Reinforcement Learning)
+- **Training**: Continuous online learning  
+- **Inference**: Real-time (<50ms latency)
 
-## Security
-- **Production**: SSL/TLS encryption, strict access controls
-- **Development**: Relaxed security for easier debugging
+---
+
+### 5. Deployment Strategy
+| Environment | Method | Highlights |
+|--------------|----------|-------------|
+| **Production** | Rolling updates | Zero downtime, automated rollback |
+| **Development** | Docker Compose | Rapid iteration with hot reload |
+| **Experimental** | Kubernetes (multi-cloud) | GeoDNS load balancing, cross-cloud failover |
+
+---
+
+### 6. Security
+| Environment | Security Level | Description |
+|--------------|----------------|-------------|
+| **Production** | High | SSL/TLS encryption, strict access control |
+| **Development** | Moderate | Relaxed for debugging convenience |
+| **Experimental** | Enhanced | AI-driven anomaly detection, behavioral firewalling |
+
+---
+
+### 🧠 Summary
+- **Production & Development**: Stable, well-tested environments.  
+- **Experimental Build**: Cutting-edge AI/ML and multi-cloud integrations — use for R&D, not live systems.
+
+---
+
+✅ *Conflict resolved — combines both HEAD and experimental documentation cleanly.*
