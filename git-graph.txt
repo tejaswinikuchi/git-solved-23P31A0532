@@ -1,0 +1,30 @@
+* d1da164 (HEAD -> main, origin/main, origin/HEAD) docs: Add changelog
+* 3f464ce docs: Added complete Git Mastery Challenge journey
+* 1eae263 Documented about usage of reset 3 times, revert 1 time and created 2+ tags
+| * a041958 (feature/another-feature) Documented about usage of reset 3 times, revert 1 time
+| * 6835394 Bad commit
+| * 9aa1b9b Documented about using rebase
+| * 8325dfd (origin/feature/another-feature) feat: Add test feature
+|/  
+* fcb1018 (tag: v1.1.0, tag: v1.0.0) docs: Update README
+* e93719b docs: Documented stash usage and cherry-pick usage
+* 521635e feat: Add new feature
+* 04bfd94 docs: Add FAQ section
+| * 0ca7557 (feature/new-feature) docs: Documented stash usage
+| * dd31aec (origin/feature/new-feature) feat: Add new feature
+|/  
+* d1e750c Documented fetch and pull usage in CHANGELOG
+*   4b177d9 Resolved all merge conflicts between main and conflict-simulator
+|\  
+| * d3dd9b2 (instructor/conflict-simulator, conflict-simulator) updating conflict-simulator
+* | 40c5807 merge: resolve all conflicts between main and conflict-simulator branches
+* | 96d8f03 Add configuration and project setup files
+* |   dc10fac Merge branch 'dev'
+|\ \  
+| * | 02011a5 (instructor/dev, dev) updating dev
+| |/  
+* | 352b948 Add checkpoint1 screenshot
+* | 0312c6f (instructor/main, instructor/HEAD) updating main
+* | fadfd24 Revise README for DevOps Simulator project
+|/  
+* ae630eb Initial commit
