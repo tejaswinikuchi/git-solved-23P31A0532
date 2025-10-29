@@ -57,5 +57,9 @@ Now enhanced with **AI-powered automation and multi-cloud support**.
 ```bash
 export DEPLOY_ENV=production
 ./scripts/deploy.sh
-"## FAQ" 
-"update" 
+
+## ❓ FAQ
+
+**Q:** How can I deploy to a different cloud?  
+**A:** Update your `.env` file with the target provider and rerun `deploy.sh`.
+
